@@ -46,7 +46,7 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String joinAnArrayIntoAString(String[] input, String divider) {
-       return String.join(input, divider);
+       return String.join(divider, input);
     }
 
     @Override
@@ -71,6 +71,6 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String returnTheFourthThroughSeventhCharactersOfInput(String input) {
-        return input.substring(3,7);
+        return input.substring(4,7);
     }
 }
