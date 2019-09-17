@@ -41,7 +41,7 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String[] Split_A_String_Into_An_Array(String input, char divider) {
-        throw new UnsupportedOperationException();
+       input.
     }
 
     @Override
