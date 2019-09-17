@@ -41,12 +41,12 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String[] Split_A_String_Into_An_Array(String input, char divider) {
-       input.
+       return input.split(String.valueOf(divider));
     }
 
     @Override
     protected String Join_An_Array_Into_A_String(String[] input, String divider) {
-        return divider.join(String.valueOf(input));
+        return String.join(divider,input);
     }
 
     @Override
@@ -71,6 +71,6 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String returnTheFourthThroughSeventhCharactersOfInput(String input) {
-        return input.substring(4,7);
+        return input.substring(3,7);
     }
 }
