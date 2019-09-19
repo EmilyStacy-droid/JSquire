@@ -15,7 +15,7 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
 
     @Override
     protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list) {
-       for(String words: list) {
+       for(String word: list) {
            a.hit();
        }
     }
