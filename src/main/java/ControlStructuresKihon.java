@@ -6,7 +6,7 @@ import java.util.Collection;
 public class ControlStructuresKihon extends ControlStructuresKihonBase {
     @Override
     protected void callHitOnAIfValIsTrueElseCallHitOnB(boolean val, Target a, Target b) {
-        if(val.getIsValid()){
+        if(val){
             a.hit();
         }else{
             b.hit();
@@ -17,7 +17,7 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
     protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list) {
         for(String item = list) {
             a.hit();
-        }
+        };
     }
 
     @Override
