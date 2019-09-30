@@ -14,8 +14,8 @@ public class FileOperationsKihon extends FileOperationsKihonBase {
 
     @Override
     public void writeContentsToThisFile(Path pathOfFile, String contents) throws IOException {
-        try( new FileWriter() = FileWriter(String.valueOf(pathOfFile))){
-            FileWriter.append(contents);
-        }
+         try(FileWriter writer = new FileWriter(String.valueOf(pathOfFile))) {
+             writer.append(contents);
+         }
     }
 }
