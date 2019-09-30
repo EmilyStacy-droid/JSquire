@@ -9,7 +9,7 @@ public class MapKihon extends MapKihonBase {
     @Override
     protected Map<String, String> createMapOfStringToString() {
 
-        return new HashMap<>(String, String);
+        return new HashMap<String, String>();
     }
 
     @Override
@@ -34,9 +34,7 @@ public class MapKihon extends MapKihonBase {
 
     @Override
     protected int countUniqueWordsInList(List<String> words) {
-       for(String word: words) {
-           return word.stream().count();
-       }
+       return words.stream().distinct().count();
     }
 
 }
