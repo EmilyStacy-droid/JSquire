@@ -19,6 +19,7 @@ public class FileOperationsKihon extends FileOperationsKihonBase {
     public void writeContentsToThisFile(Path pathOfFile, String contents) throws IOException {
         try(FileWriter writer = new FileWriter(String.valueOf(pathOfFile))){
             writer.append(contents);
+            //Files.write(pathOfFile, contents.getBytes());
         }
     }
 }
