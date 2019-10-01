@@ -38,6 +38,6 @@ public class ControlStructuresKihon extends ControlStructuresKihonBase {
     protected void callHitOnAOnceAndLoopUntilIsValidIsFalse(Target a) {
         do{
             a.hit();
-        }while(isValid(a) == true);
+        }while(a.getIsValid());
     }
 }
