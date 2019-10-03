@@ -39,7 +39,7 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String selectFirstNameFromPersonWhereLastNameEqualsRayburn() {
-        return "SELECT  firstName  FROM PEOPLE WHERE LAST NAME = 'Rayburn'";
+        return "SELECT * firstName  FROM PERSON WHERE LAST NAME = 'Rayburn'";
     }
 
     @Override
@@ -49,7 +49,7 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String insertPersonId4NamedMikeJohnsonAge5ToPerson() {
-        return "INSERT INTO PERSON (PersonId,FirstName, LastName,Age) VALUE (4,'Mike','Johnson','5')";
+        return "INSERT INTO PERSON (PersonId,firstName, LastName,Age) VALUE (4,'Mike','Johnson','5')";
     }
 
     @Override
