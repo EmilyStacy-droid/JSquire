@@ -29,12 +29,12 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String Select_All_Fields_And_Rows_From_Person() {
-        return "SELECT * FROM  PEOPLE";
+        return "SELECT * FROM  PERSON";
     }
 
     @Override
     protected String selectAllFieldsFromPersonJoinedToAddress() {
-        return "SELECT FROM PEOPLE JOIN ADDRESS";
+        return "SELECT FROM PERSON JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
     }
 
     @Override
