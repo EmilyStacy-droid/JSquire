@@ -39,12 +39,12 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String selectFirstNameFromPersonWhereLastNameEqualsRayburn() {
-        return "SELECT * firstName  FROM PERSON WHERE LAST NAME = 'Rayburn'";
+        return "SELECT firstName FROM Person WHERE lastName = 'Rayburn'";
     }
 
     @Override
     protected String selectAllFieldsFromPersonLeftOuterJoinedToAddress() {
-        return "SELECT * FROM PERSON LEFT JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
+        return "SELECT  FROM PERSON LEFT JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
     }
 
     @Override
