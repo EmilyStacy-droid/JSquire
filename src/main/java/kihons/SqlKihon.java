@@ -34,26 +34,35 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String selectAllFieldsFromPersonJoinedToAddress() {
-        return "SELECT FROM PERSON JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
+        return "SELECT * FROM PERSON JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
     }
 
     @Override
     protected String selectFirstNameFromPersonWhereLastNameEqualsRayburn() {
-        return "SELECT * FROM PEOPLE ";
+        return "SELECT  firstName  FROM PEOPLE WHERE LAST NAME = 'Rayburn'";
     }
 
     @Override
     protected String selectAllFieldsFromPersonLeftOuterJoinedToAddress() {
-        throw new NotImplementedYetException();
+        return "SELECT * FROM PERSON LEFT JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
     }
 
     @Override
     protected String insertPersonId4NamedMikeJohnsonAge5ToPerson() {
-        throw new NotImplementedYetException();
+        return "INSERT INTO PERSON (PersonId,FirstName, LastName,Age) VALUE (4,'Mike','Johnson','5')";
     }
 
     @Override
     protected String updateAllLastNamesRayburnToJohnsonInPerson() {
-        throw new NotImplementedYetException();
+        return "UPDATE Person SET lastName = 'Johnson' WHERE lastName = 'Rayburn'";
     }
 }
+
+
+
+
+
+
+
+
+
