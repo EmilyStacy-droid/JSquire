@@ -34,7 +34,7 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String selectAllFieldsFromPersonJoinedToAddress() {
-        return "SELECT * FROM Person JOIN Address ON Person.PersonId = Address.PersonId";
+        return "SELECT * FROM PERSON JOIN ADDRESS ON PERSON.PersonId TO ADDRESS.PersonID";
     }
 
     @Override
