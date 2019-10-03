@@ -29,17 +29,17 @@ public class SqlKihon extends SqlKihonBase {
 
     @Override
     protected String Select_All_Fields_And_Rows_From_Person() {
-        throw new NotImplementedYetException();
+        return "SELECT * FROM  PEOPLE";
     }
 
     @Override
     protected String selectAllFieldsFromPersonJoinedToAddress() {
-        throw new NotImplementedYetException();
+        return "SELECT FROM PEOPLE JOIN ADDRESS";
     }
 
     @Override
     protected String selectFirstNameFromPersonWhereLastNameEqualsRayburn() {
-        throw new NotImplementedYetException();
+        return "SELECT * FROM PEOPLE ";
     }
 
     @Override
