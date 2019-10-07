@@ -4,6 +4,7 @@ import framework.Item;
 import framework.bases.StreamsKihonBase;
 import framework.exceptions.NotImplementedYetException;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collector;
@@ -18,12 +19,12 @@ public class StreamKihon extends StreamsKihonBase {
 
     @Override
     protected List<Item> sortItemsAlphabeticallyBasedOnName(List<Item> items) {
-       return items.stream().map(i ->i.getName()).sorted().collect(Collector.of(Item));
+       return items.stream().map(i ->i.getName()).sorted().collect(Collectors.toList(Item));
     }
 
     @Override
     protected List<Item> sortOnCostFromLestToMostExpensiveAllItemsThatCostLessThanOrEqualToMyMonies(List<Item> items, int monies) {
-        throw new NotImplementedYetException();
+       items.stream().sorted(Comparator.comparing(monies, )).
     }
 
     @Override
