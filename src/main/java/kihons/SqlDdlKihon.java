@@ -6,6 +6,6 @@ import framework.exceptions.NotImplementedYetException;
 public class SqlDdlKihon extends SqlDdlKihonBase {
     @Override
     public String createTablePersonWithOneColumn() {
-        throw new NotImplementedYetException();
+        return "create Table Person ( id INT)";
     }
 }
